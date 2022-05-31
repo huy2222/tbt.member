@@ -324,6 +324,7 @@
     }
     li {
         margin-top: 5px;
+        list-style-type: none;
     }
     .menu .menu-icon{
         margin-top: -32px;
