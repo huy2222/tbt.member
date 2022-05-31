@@ -231,9 +231,13 @@
     margin-top: 10px;
 
 }
+.selection-subject-list li{
+    list-style-type: none;
+}
 .selection-subject-list {
     margin-top: 20px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    margin-left: 34px;
 }
 /* menu */
 .menu{
