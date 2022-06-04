@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    counter-reset: numerical-order;
+}
 .heading-page h1{
     text-align: center; 
     line-height: 44px;
@@ -110,6 +113,15 @@
     text-align: center;
     line-height: 24px;
 }
+/* auto số thứ tự */
+.modal-heading .number::before{
+    counter-increment: numerical-order;
+    content: counter( numerical-order);
+    color: #fff;
+}
+.modal-heading .list-stt{
+     list-style-type: decimal;
+}
 .modal-heading h1 {
    font-size: 26px;
    text-align: center;  
@@ -129,7 +141,6 @@
 
 .modal-footer{
     position: relative;
-    
     height: 106px;   
 }   
 .modal-footer .social-network{
@@ -229,15 +240,16 @@
     color: #000;
     font-size: 25px;
     margin-top: 10px;
+    display: block;
 
 }
 .selection-subject-list li{
     list-style-type: none;
 }
 .selection-subject-list {
-    margin-top: 20px;
+    margin-top: 30px;
     /* margin-left: 10px; */
-    margin-left: 34px;
+    margin-left: 22px;
 }
 /* menu */
 .menu{
@@ -245,7 +257,7 @@
     position: flex;
 }
 .menu .menu-icon{
-    font-size: 40px;
+    font-size: 35px;
     position: fixed;
     margin-top: -15px
 
@@ -287,6 +299,15 @@
     }
 }
 /* mobile <740px */
+/* @media only screen  and (max-width:280px) and (min-width:412px) {
+    h1{
+        color: red;
+    }
+    .modal-container{
+        width: 262px;
+    }
+    
+} */
 @media only screen  and (max-width:46.1875em) {
     /* modal */
     .modal {
