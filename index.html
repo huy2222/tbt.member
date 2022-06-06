@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trần Bình Trọng </title>
+    <link rel="icon" href="./asset/img/avata.jpg"  >
     <link rel="stylesheet" href="./asset/main.css">
     <link rel="stylesheet" href="./asset/fonts/themify-icons/themify-icons.css">
 </head>
@@ -24,40 +25,40 @@
                 <i class=" close-selection ti-close"></i>
             </div>
             <ul class="selection-subject-list">
-                <li><a href="">Toán học</a></li>
-                <li><a href="">Ngữ Văn</a></li>
+                <li><a href="#math">Toán học</a></li>
+                <li><a href="#literature">Ngữ Văn</a></li>
                 <li><a href="#english">Ngoại Ngữ</a></li>
-                <li><a href="">Vật Lí</a></li>
-                <li><a href="">Hóa Học</a></li>
-                <li><a href="">Sinh Học</a></li>
-                <li><a href="">Lịch sử</a></li>
-                <li><a href="">Địa Lí</a></li>
-                <li><a href="">Tin Học</a></li>
-                <li><a href="">Công Nghệ</a></li>
-                <li><a href="">Giáo dục công dân</a></li>
-                <li><a href="">thể dục</a></li>
-                <li><a href="">quốc phòng</a></li>
-                <li><a href="">nhân viên</a></li>
+                <li><a href="#physics">Vật Lí</a></li>
+                <li><a href="#chemistry">Hóa Học</a></li>
+                <li><a href="#biological">Sinh Học</a></li>
+                <li><a href="#hictory">Lịch sử</a></li>
+                <li><a href="#Geographic">Địa Lí</a></li>
+                <li><a href="#Informatics">Tin Học</a></li>
+                <li><a href="#technology">Công Nghệ</a></li>
+                <li><a href="#civic-education">Giáo dục công dân</a></li>
+                <li><a href="#physical education">thể dục</a></li>
+                <li><a href="#defence-security">quốc phòng-an ninh</a></li>
+                <li><a href="#Staff">nhân viên</a></li>
             </ul>       
         </div>
     </div>
     <!-- subject pc -->
     <div class="selection-subject">
             <ul class="selection-subject-content">
-                <li><a href="">Toán học</a></li>
-                <li><a href="">Ngữ Văn</a></li>
+                <li><a href="#math">Toán học</a></li>
+                <li><a href="#literature">Ngữ Văn</a></li>
                 <li><a href="#english">Ngoại Ngữ</a></li>
-                <li><a href="">Vật Lí</a></li>
-                <li><a href="">Hóa Học</a></li>
-                <li><a href="">Sinh Học</a></li>
-                <li><a href="">Lịch sử</a></li>
-                <li><a href="">Địa Lí</a></li>
-                <li><a href="">Tin Học</a></li>
-                <li><a href="">Công Nghệ</a></li>
-                <li><a href="">Giáo dục công dân</a></li>
-                <li><a href="">thể dục</a></li>
-                <li><a href="">quốc phòng</a></li>
-                <li><a href="">nhân viên</a></li>
+                <li><a href="#physics">Vật Lí</a></li>
+                <li><a href="#chemistry">Hóa Học</a></li>
+                <li><a href="#biological">Sinh Học</a></li>
+                <li><a href="#hictory">Lịch sử</a></li>
+                <li><a href="#Geographic">Địa Lí</a></li>
+                <li><a href="#Informatics">Tin Học</a></li>
+                <li><a href="#technology">Công Nghệ</a></li>
+                <li><a href="#civic-education">Giáo dục công dân</a></li>
+                <li><a href="#physical education">thể dục</a></li>
+                <li><a href="#defence-security">quốc phòng-an ninh</a></li>
+                <li><a href="#Staff">nhân viên</a></li>
             </ul>               
     </div>
     <div class="menu">
@@ -92,7 +93,7 @@
                         </div>
                     </a>
                     <!-- email -->
-                    <a class="network-icon-hover" href="#" title="Email" onclick="alert('Gmail:nguyennhathuy21112005@gmail.com')">
+                    <a class="network-icon-hover" href="mailto:nguyennhathuy21112005@gmail.com" title="Email" onclick="alert('Gmail:nguyennhathuy21112005@gmail.com')">
                         <div class="network-icon-hover">
                             <i class=" network-icon ti-email"></i>
                         </div>
@@ -787,12 +788,15 @@
     const openMenu=document.querySelector('.js-menu')
     const closeMenu=document.querySelector('.js-menu-close')
 
+
     function showselection (){
         selection.classList.add('open')
     }
     openMenu.addEventListener('click',showselection)
     function closeselection() {
         selection.classList.remove('open')
+        // var selectionMobile=selectionmobile.c
+        
     }
     closeMenu.addEventListener('click',closeselection)
     selection.addEventListener('click',closeselection)

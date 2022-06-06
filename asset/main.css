@@ -6,6 +6,9 @@
 body{
     counter-reset: numerical-order;
 }
+html{
+    scroll-behavior: smooth;
+}
 .heading-page h1{
     text-align: center; 
     line-height: 44px;
@@ -156,6 +159,7 @@ body{
 .modal-footer .social-network .network-icon-hover:hover {
     opacity: 3; 
     font-size: 30px;
+    
 }
 
 .modal-footer .social-network .network-icon{
@@ -233,7 +237,30 @@ body{
     max-width: 100%;
     background-color: #fff;
     z-index: 1;
+    animation-name: chuyendongra;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    /* transition: chuyendongra linear 0.2s ;
+    transform:  translateX(-100%);
+    transition: transform linear 0.2s; */
+  
+    
+    /* animation: chuyendongra 5s ease 3s infinite;
+    animation-direction: alternate; */
+    
+
 }
+@keyframes chuyendongra {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0%);}   
+}
+@keyframes chuyendongvao {
+    from {transform: translateX(0%);}
+    to {transform: translateX(-100%);}   
+}
+
+
+
 .selection-subject-list li a{
     text-decoration: none;
     text-transform: uppercase;
