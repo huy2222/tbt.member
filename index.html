@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="./asset/fonts/themify-icons/themify-icons.css">
 </head>
 <body>    
-    <div class="heading-page">
+    <!-- <script src="main.js"></script> -->
+ 
+    <div class="heading-page" id="begin-page">
         <h1> Danh Sách
             <br>
              Giáo Viên-Cán Bộ-Nhân Viên </h1>
     </div>
     <div class="come-back">
-        <a href=""><i class=" come-back-icon ti-arrow-up"></i></a>
+        <a href="#begin-page"><i class=" come-back-icon ti-arrow-up"></i></a>
    </div>
    <!-- subject mobile -->
     <div class="selection-overlay">
@@ -25,6 +27,7 @@
                 <i class=" close-selection ti-close"></i>
             </div>
             <ul class="selection-subject-list">
+                <li><a href="#begin-page">Page</a></li>
                 <li><a href="#math">Toán học</a></li>
                 <li><a href="#literature">Ngữ Văn</a></li>
                 <li><a href="#english">Ngoại Ngữ</a></li>
@@ -63,24 +66,52 @@
     </div>
     <div class="menu">
         <button class="js-menu"><i class="menu-icon ti-menu "></i></button>
-    </div>    
+    </div>  
+      <!-- search  -->
     <div class="search">
-        <div class="search-content">
-            <input type="text" name="giatritim" id="giatritim" placeholder="tên giáo viên" >
-        </div>
-        <div class="search-icon">
+            <!-- <input type="text" name="giatritim" id="myInput" placeholder="tên giáo viên" > -->
+            <input type="text" id="myInput" placeholder="Search for City.." title="Type in a name of City">
+            <ul id="myUL" class="search-list">
+            <li><a href="#">Trần Thái Vinh</a></li>
+            <li><a href="#">Nguyễn Xuân Hùng</a></li>
+            <li><a href="#">Đỗ Minh Phúc</a></li>
+            <li><a href="#">Nguyễn Văn Lời</a></li>
+            <li><a href="#">Nguyễn Nhật Huy </a><div class="number"></div></li>
+            <li><a href="#">Lương Nữ Thùy Duyên</a></li>
+            <li><a href="#">Berlin</a></li>
+            <li><a href="#">Bordeaux</a></li>
+            <li><a href="#">Copenhagen</a></li>
+            <li><a href="#">Cardiff</a></li>
+            <li><a href="#">Caen</a></li>
+            <li><a href="#english">Huỳnh Thị Quỳnh Giao</a></li>
+            <li><a href="#">Bologna</a></li>
+            <li><a href="#">Berlin</a></li>
+            <li><a href="#">Bordeaux</a></li>
+            <li><a href="#">Copenhagen</a></li>
+            <li><a href="#">Cardiff</a></li>
+            <li><a href="#">Caen</a></li>
+            <li><a href="#huynhthiquynhgiao">Huỳnh Thị Quỳnh Giao</a></li>
+          </ul>
+        
+        <!-- <div class="search-icon">
             <button><i class=" icon ti-search"></i></button>
-        </div>
+        </div> -->
     </div>
 <!-- begin row 1 -->
     <div class="modal">      
         <div class="modal-container">
             <div class="modal-heading">   
-                <div class="number"></div>
-                <h1>Trần Thái Vinh</h1>              
+                <div class="number"></div>                                 
+                <h1>Trần Thái Vinh</h1> 
+                <div class="star-position" style="background-color:red ;">
+                    <i class="star ti-star"></i>
+                    <i class="star ti-star"></i>  
+                    <i class="star ti-star"></i>  
+                </div>
+                   
             </div>
             <div class="modal-content">
-                <img src="./asset/img/slider1.jpg" alt="">
+                <img src="./asset/img/a41.gif" alt="">                
             </div>
             <div class="modal-footer">                       
                 <p class="footer-content">Thời gian giảng dạy: 12 năm</p>
@@ -117,10 +148,15 @@
         <div class="modal-container">
             <div class="modal-heading">  
                 <div class="number"></div> 
-                <h1>Nguyễn Xuân Hùng</h1>             
+                <h1>Nguyễn Xuân Hùng</h1>   
+                <div class="star-position">
+                    <i class="star ti-star"></i>
+                    <i class="star ti-star"></i> 
+                    <i class="star ti-star"></i>  
+                </div>          
             </div>
             <div class="modal-content">
-                <img src="./asset/img/slider1.jpg" alt="">
+                <img src="./asset/img/xoaphong.png" alt="">
             </div>
             <div class="modal-footer">
                 <p class="footer-content">Thời gian giảng dạy:12 năm </p>
@@ -150,7 +186,12 @@
         <div class="modal-container">
             <div class="modal-heading">   
                 <div class="number"></div>
-                <h1>Đỗ Minh Phúc</h1>              
+                <h1>Đỗ Minh Phúc</h1>      
+                <div class="star-position" style="background-color: red;">
+                    <i class="star ti-star"></i> 
+                    <i class="star ti-star"></i>  
+
+                </div>        
             </div>
             <div class="modal-content">
                 <img src="./asset/img/slider1.jpg" alt="">
@@ -183,7 +224,12 @@
         <div class="modal-container">
             <div class="modal-heading"> 
                 <div class="number"></div>
-                <h1>Nguyễn Văn Lời</h1>                
+                <h1>Nguyễn Văn Lời</h1>  
+                <div class="star-position">
+                    <i class="star ti-star"></i>  
+                    <i class="star ti-star"></i>  
+                </div>
+                
             </div>
             <div class="modal-content">
                 <img src="./asset/img/slider1.jpg" alt="">
@@ -364,7 +410,10 @@
     <div class="modal-container">
         <div class="modal-heading">
              <div class="number"></div>  
-            <h1>Huỳnh Thị Quỳnh Giao</h1>              
+            <h1  id="huynhthiquynhgiao" >Huỳnh Thị Quỳnh Giao</h1>   
+            <div class="star-position">
+                <i class="star ti-star"></i> 
+            </div>               
         </div>
         <div class="modal-content">
             <img src="./asset/img/slider1.jpg" alt="">
@@ -782,31 +831,8 @@
     </div>
     </div> 
     <!-- end row 5 -->
-<script>
-    const selection=document.querySelector('.selection-overlay')
-    const selectionMobile=document.querySelector('.selection-mobile')
-    const openMenu=document.querySelector('.js-menu')
-    const closeMenu=document.querySelector('.js-menu-close')
-
-
-    function showselection (){
-        selection.classList.add('open')
-    }
-    openMenu.addEventListener('click',showselection)
-    function closeselection() {
-        selection.classList.remove('open')
-        // var selectionMobile=selectionmobile.c
-        
-    }
-    closeMenu.addEventListener('click',closeselection)
-    selection.addEventListener('click',closeselection)
-
-
     
-
-
-</script>
-
+    <script src="main.js"></script>
 
 
 
