@@ -89,6 +89,7 @@ html{
     border: 1px solid #ddd;
     margin-bottom: 7px;
     width: 100%;
+    border-radius: 15px;
   }
 
   #myUL {
@@ -100,6 +101,7 @@ html{
     margin: 0;
     z-index: 1;
     /* top: 209px; */
+    
     
   }
 
@@ -313,16 +315,82 @@ html{
     animation-name: chuyendongra;
     animation-duration: 0.5s;
     animation-direction: alternate;
-    /* transition: chuyendongra linear 0.2s ;
-    transform:  translateX(-100%);
-    transition: transform linear 0.2s; */
-  
-    
-    /* animation: chuyendongra 5s ease 3s infinite;
-    animation-direction: alternate; */
+}
+/* page footer */
+.page-footer{
+    height: 246px;
+    width: 100%;
+    background-color: #000;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.page-footer .row-footer{
+    background-color: #000;
+    height: 80%;
+    width: 100%;
+    display: flex;
+
+}
+.page-footer .last-row{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-footer .last-row p{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.row-footer .hight-school {
+    width: 50%;
+    overflow: hidden;
+}
+.row-footer .heading {
+    text-align: center;
+    margin-top: 3px;
+    color: #fff;
+}
+.row-footer .content{
+    width: 100%;
+    height: 85%;
+    display: flex;
+}
+.row-footer .content .picture{
+    width: 25%;
+    height: 100%;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+}
+
+.row-footer .content .information{
+    width: 75%;
+    height: 100%;
+
+}
+.row-footer .content .information a{
+    text-decoration: none;
+    color: #fff;
+}
+.row-footer .content .information p {
+    margin-top: 3px;
+    margin-left: 5px;
+    font-size: 21px;
+    color: #fff;
+
+}
+.row-footer .private {
+    width: 50%;
     
 
 }
+
+
 @keyframes chuyendongra {
     from {transform: translateX(-100%);}
     to {transform: translateX(0%);}   
@@ -381,7 +449,7 @@ html{
 /* tablet >=740px-<1024px */
 @media only screen  and (min-width:46.25em) and (max-width:63.9375em) {
     
-    h1{
+    .heading-page h1{
         color: red;
     }
     .modal {
@@ -403,6 +471,39 @@ html{
     #myUL{
         /* top: 180px; */
     }
+    /* footer */
+    .page-footer .row-footer{
+        display: block;
+    }
+    .row-footer .content .information p{
+        font-size: 27px;
+        margin-left: 22px;
+    }
+    .row-footer .hight-school{
+        width: 100%;
+    }
+    .row-footer .private {
+        width: 100%;
+    }
+    .page-footer {
+        height: auto;
+    }
+    .page-footer .content .picture img{
+        width: 100%;
+        height: 100%;
+    }
+    .page-footer .last-row{
+        height: 62px;
+    }
+    .row-footer .content .picture{
+        margin-left: 10px;
+    }
+    .row-footer .heading{
+        margin-top: 10px;
+    }
+
+
+    
 }
 /* mobile */
 @media only screen  and (max-width:46.1875em) {
@@ -417,6 +518,10 @@ html{
     .modal-container{
         width: 321px;
     }
+    .modal-heading h1{
+        font-size: 24px;
+    }
+
     /* heading */
     .heading-page h1{
         font-size: 26px;
@@ -457,4 +562,35 @@ html{
     #myUL li {
         margin: 0;
     }
+    /* footer */
+    .page-footer .row-footer{
+        display: block;
+    }
+    .row-footer .content .information p{
+        font-size: 15px;
+    }
+    .row-footer .hight-school{
+        width: 100%;
+    }
+    .row-footer .private {
+        width: 100%;
+    }
+    .page-footer {
+        height: auto;
+    }
+    .page-footer .content .picture img{
+        width: 100%;
+        height: 100%;
+    }
+    .page-footer .last-row{
+        height: 62px;
+    }
+    .row-footer .heading{
+        font-size: 14px;
+        margin-left: 18px;
+    }
+    .row-footer .content .picture{
+        margin-left: 3px;
+    }
 }
+
