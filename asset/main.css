@@ -32,12 +32,12 @@ html{
     align-content: center;
     margin-right: 1px;
     margin-left: 2px; 
-    display: flex;
     position: fixed;
     bottom: 0;
     right: 0;
     align-items: center;
-
+    display: none;
+    z-index: 1;
     
 } 
 .come-back:hover{
@@ -145,10 +145,11 @@ html{
     width: 100%;
     display: flex;
     justify-content: space-around; 
+    flex-wrap: wrap;
 }   
 .modal-container{  
     height: 555px;
-    background-image: url(./img/backgrounmenber.jpg);
+    background-image: url(./img/web/backgrounmenber.jpg);
     background-size: 100% 100;
     background-repeat: no-repeat;
     margin: 16px 39px;
@@ -162,11 +163,6 @@ html{
 .modal-heading .star{ 
    
 }
-
-
-
-
-
 .modal-heading .star-position{
     background-color: yellow;
     position: absolute;
@@ -262,18 +258,6 @@ html{
     text-align: left;
     padding-top: 5px;
     margin-left: 5px;
-}
-.modal-row{
-    position: relative;
-    height: 100%;
-    height: 734px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.modal-row .modal-container {
-    
 }
 /* layout */
 .selection-overlay{
@@ -389,8 +373,6 @@ html{
     
 
 }
-
-
 @keyframes chuyendongra {
     from {transform: translateX(-100%);}
     to {transform: translateX(0%);}   
@@ -440,9 +422,6 @@ html{
 @media only screen  and (min-width:64em) {
     .menu{
         display: none;
-    }
-    .come-back{
-        display: block;
     }
 }
 
@@ -513,7 +492,7 @@ html{
         display: flex;
         justify-content: center;
         align-items: center;
-        /* margin-top: 90px; */
+        flex-wrap: nowrap;
     }
     .modal-container{
         width: 321px;
