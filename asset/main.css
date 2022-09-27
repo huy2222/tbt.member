@@ -164,7 +164,7 @@ html{
    
 }
 .modal-heading .star-position{
-    background-color: yellow;
+    /* background-color: yellow; */
     position: absolute;
     top: 0;
     right: 0;
